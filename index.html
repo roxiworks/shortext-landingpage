@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050805" />
+    <meta
+      name="description"
+      content="Shortext is a completely free Windows text expander. Save reusable responses once and expand them anywhere with a simple shortcut."
+    />
+    <meta property="og:title" content="Shortext — Type less. Get more done." />
+    <meta
+      property="og:description"
+      content="The free, local-first Windows text expander for faster and more consistent work."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/shortext-logo.png" />
+    <link rel="icon" href="/assets/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/shortext-logo.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Shortext — Free Windows Text Expander</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Shortext home">
+        <span class="brand-mark"><img src="/assets/shortext-logo.png" alt="" /></span>
+        <span class="brand-copy">
+          <strong>SHORTEXT</strong>
+          <small>Your words, ready anywhere</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="free-chip"><i></i> 100% FREE</span>
+        <a class="button button-small button-mint" href="/downloads/Shortext-Setup-1.6.16.exe" download>
+          Download
+          <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 2v10m0 0 4-4m-4 4L6 8M3 15v2h14v-2" /></svg>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-grid" id="top">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <div class="hero-brand-lockup" aria-label="Shortext">
+            <img src="/assets/shortext-logo.png" alt="Shortext logo" />
+            <span><strong>SHORTEXT</strong><small>Your words, ready anywhere</small></span>
+          </div>
+          <p class="eyebrow"><span>01</span> Free Windows text expander</p>
+          <h1>TYPE LESS.<br /><em>GET MORE DONE.</em></h1>
+          <p class="hero-lede">
+            Turn a short trigger into a complete message, email, address, or everyday reply—anywhere
+            on your Windows desktop.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-mint button-large" href="/downloads/Shortext-Setup-1.6.16.exe" download>
+              Download now
+              <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 2v10m0 0 4-4m-4 4L6 8M3 15v2h14v-2" /></svg>
+            </a>
+            <a class="text-link" href="#how-it-works">See how it works <span>↘</span></a>
+          </div>
+          <ul class="hero-meta" aria-label="Product details">
+            <li><span>OS</span> Windows 10 &amp; 11</li>
+            <li><span>COST</span> Free forever</li>
+            <li><span>DATA</span> Local-first</li>
+          </ul>
+        </div>
+
+        <div class="hero-stage reveal" data-delay="120">
+          <div class="signal-card signal-top" aria-hidden="true">
+            <span>ACTIVE</span><b>●</b>
+            <strong>System-wide</strong>
+          </div>
+
+          <div class="app-window" aria-label="Shortext application preview">
+            <div class="app-titlebar">
+              <div class="app-brand">
+                <img src="/assets/shortext-logo.png" alt="" />
+                <span><b>SHORTEXT</b><small>Your words, ready anywhere</small></span>
+              </div>
+              <div class="window-controls"><i></i><i></i><i></i></div>
+            </div>
+            <div class="app-body">
+              <aside class="app-sidebar">
+                <div class="sidebar-heading"><b>Snippets</b><small>3 snippets</small></div>
+                <div class="mini-search">Search snippets <span>⌄</span></div>
+                <div class="mock-group"><span>Quick replies</span><i>⌄</i></div>
+                <div class="mock-snippet active"><b>Thank you</b><code>/thanks</code></div>
+                <div class="mock-snippet"><b>Email address</b><code>/email</code></div>
+                <div class="mock-group"><span>Personal</span><i>›</i></div>
+              </aside>
+              <div class="app-editor">
+                <div class="editor-topline"><span>SNIPPET EDITOR</span><i>Saved</i></div>
+                <h3>Edit Snippet</h3>
+                <div class="form-row">
+                  <label>Snippet name<strong>Quick thank-you</strong></label>
+                  <label>Shortcut / trigger<strong>/thanks</strong></label>
+                </div>
+                <label class="mock-label">Group<strong class="group-select">Quick replies <span>⌄</span></strong></label>
+                <label class="mock-label content-label">Snippet content
+                  <strong>Thanks for reaching out! I appreciate your message and will get back to you as soon as possible.</strong>
+                </label>
+                <div class="mock-actions"><span>Delete</span><b>Save changes</b></div>
+              </div>
+            </div>
+            <div class="app-status"><span><i></i> Expansion active</span><small>Version 1.6.16</small></div>
+          </div>
+
+          <div class="expansion-demo" aria-live="polite">
+            <div class="demo-label"><span>LIVE EXPANSION</span><i></i></div>
+            <div class="demo-input">
+              <span data-demo-text>/thanks</span><b class="caret"></b>
+            </div>
+            <p data-demo-caption>Type a shortcut anywhere.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-label="Shortext benefits">
+        <div class="ticker-track">
+          <span>FREE FOREVER</span><i>✦</i><span>NO ACCOUNT</span><i>✦</i><span>NO SUBSCRIPTION</span><i>✦</i>
+          <span>WORKS SYSTEM-WIDE</span><i>✦</i><span>LOCAL-FIRST</span><i>✦</i><span>FREE FOREVER</span><i>✦</i>
+          <span>NO ACCOUNT</span><i>✦</i><span>NO SUBSCRIPTION</span><i>✦</i><span>WORKS SYSTEM-WIDE</span><i>✦</i>
+        </div>
+      </div>
+
+      <section class="problem section-grid">
+        <div class="section-kicker reveal"><span>THE PROBLEM</span><small>Repetition steals time.</small></div>
+        <div class="statement reveal">
+          <h2>SAME ANSWERS.<br />OVER. AND OVER.</h2>
+          <p>
+            Emails, greetings, addresses, meeting links, and common replies should not be typed from scratch
+            every time you need them.
+          </p>
+        </div>
+        <div class="repeat-stack reveal" data-delay="100" aria-hidden="true">
+          <div><span>09:12</span> Thanks for reaching out! I will reply shortly.</div>
+          <div><span>10:47</span> Thanks for reaching out! I will reply shortly.</div>
+          <div><span>13:03</span> Thanks for reaching out! I will reply shortly.</div>
+          <div class="strike"><span>15:26</span> Type it all again?</div>
+        </div>
+      </section>
+
+      <section class="intro section-grid" id="how-it-works">
+        <div class="section-kicker reveal"><span>INTRODUCING SHORTEXT</span><small>One shortcut. Complete response.</small></div>
+        <div class="intro-heading reveal">
+          <p class="eyebrow"><span>02</span> How it works</p>
+          <h2>SAVE IT ONCE.<br /><em>USE IT EVERYWHERE.</em></h2>
+        </div>
+        <div class="steps">
+          <article class="step-card reveal">
+            <header><span>01</span><b>SAVE</b></header>
+            <div class="step-visual save-visual">
+              <div><small>Shortcut</small><code>/thanks</code></div>
+              <div><small>Snippet content</small><p>Thanks for reaching out! I will reply shortly.</p></div>
+            </div>
+            <h3>Write the response once.</h3>
+            <p>Save reusable messages, contact details, links, or replies in simple groups.</p>
+          </article>
+          <article class="step-card reveal" data-delay="80">
+            <header><span>02</span><b>TYPE</b></header>
+            <div class="step-visual type-visual"><span>/thanks</span><i></i></div>
+            <h3>Use a shortcut anywhere.</h3>
+            <p>Type your trigger in email, browsers, chat apps, documents, Notepad, and other text fields.</p>
+          </article>
+          <article class="step-card reveal" data-delay="160">
+            <header><span>03</span><b>EXPAND</b></header>
+            <div class="step-visual expand-visual">
+              <p><b>Thanks</b> for reaching out!</p><p>I appreciate your message.</p><p>I will reply as soon as possible.</p>
+            </div>
+            <h3>Get the exact saved text.</h3>
+            <p>Your trigger is replaced with the complete response, including every line and step.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="features section-grid" id="features">
+        <div class="section-kicker reveal"><span>BUILT FOR DAILY WORK</span><small>Focused by design.</small></div>
+        <div class="feature-heading reveal">
+          <p class="eyebrow"><span>03</span> What Shortext does</p>
+          <h2>FAST WHERE IT MATTERS.<br /><em>QUIET EVERYWHERE ELSE.</em></h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-wide reveal">
+            <span class="feature-number">01</span>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h7" /><path d="m17 14 3 3-3 3" /></svg>
+            </div>
+            <h3>Expand system-wide.</h3>
+            <p>Your shortcuts follow you across the Windows desktop—not just inside Shortext.</p>
+            <div class="app-strip"><span>EMAIL</span><span>BROWSER</span><span>CHAT</span><span>DOCS</span><span>NOTEPAD</span></div>
+          </article>
+          <article class="feature-card reveal" data-delay="70">
+            <span class="feature-number">02</span>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h7l2 2h9v10H3z" /></svg>
+            </div>
+            <h3>Stay organized.</h3>
+            <p>Group, collapse, search, and manage a large snippet library without clutter.</p>
+          </article>
+          <article class="feature-card reveal" data-delay="140">
+            <span class="feature-number">03</span>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4" /><path d="M5 19h14" /></svg>
+            </div>
+            <h3>Import and share.</h3>
+            <p>Review bulk imports, catch conflicts, and export the complete snippet library.</p>
+          </article>
+          <article class="feature-card feature-wide reveal">
+            <span class="feature-number">04</span>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 1 0 8 8" /><path d="M12 1v6h6" /></svg>
+            </div>
+            <h3>Local, backed up, under your control.</h3>
+            <p>Snippets stay on your device. Automatic backups and restore tools keep the library recoverable.</p>
+            <div class="privacy-readout"><i></i><span>LOCAL STORAGE</span><b>Protected</b></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="free-section section-grid" id="download">
+        <div class="free-orbit" aria-hidden="true"><span>FREE</span><span>FOREVER</span><span>WINDOWS</span></div>
+        <div class="free-copy reveal">
+          <p class="eyebrow"><span>04</span> No pricing page needed</p>
+          <h2>$0.<br /><em>FOREVER.</em></h2>
+          <p>Shortext is completely free. No trial countdown, subscription, account, or credit card.</p>
+        </div>
+        <div class="download-card reveal" data-delay="100">
+          <div class="download-card-top">
+            <img src="/assets/shortext-logo.png" alt="Shortext logo" />
+            <span><b>Shortext for Windows</b><small>Version 1.6.16 · 64-bit installer</small></span>
+          </div>
+          <ul><li>System-wide text expansion</li><li>Local snippet storage</li><li>Bulk import and export</li><li>Automatic backups</li></ul>
+          <a class="button button-mint button-full" href="/downloads/Shortext-Setup-1.6.16.exe" download>
+            Download now
+            <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 2v10m0 0 4-4m-4 4L6 8M3 15v2h14v-2" /></svg>
+          </a>
+          <p class="download-note">Free forever · Developed by ROXI</p>
+        </div>
+      </section>
+
+      <section class="faq section-grid" id="faq">
+        <div class="section-kicker reveal"><span>QUESTIONS, ANSWERED</span><small>The useful details.</small></div>
+        <div class="faq-heading reveal"><p class="eyebrow"><span>05</span> FAQ</p><h2>BEFORE YOU<br /><em>DOWNLOAD.</em></h2></div>
+        <div class="faq-list reveal" data-delay="80">
+          <details open>
+            <summary>Is Shortext really free?<span></span></summary>
+            <p>Yes. Shortext is completely free to download and use. There are no paid tiers or subscriptions.</p>
+          </details>
+          <details>
+            <summary>Where does text expansion work?<span></span></summary>
+            <p>Shortext works across standard Windows text fields, including email, browsers, chat applications, documents, and Notepad.</p>
+          </details>
+          <details>
+            <summary>Where are my snippets stored?<span></span></summary>
+            <p>Your snippet library is stored locally on your Windows device. Shortext does not require an online account.</p>
+          </details>
+          <details>
+            <summary>Does it keep backups?<span></span></summary>
+            <p>Yes. Shortext maintains automatic backups and includes a restore screen for recovering your library.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="cta-noise" aria-hidden="true"></div>
+        <div class="reveal">
+          <img src="/assets/shortext-logo.png" alt="" />
+          <p>YOUR WORDS, READY ANYWHERE.</p>
+          <h2>STOP REPEATING.<br /><em>START EXPANDING.</em></h2>
+          <a class="button button-dark button-large" href="/downloads/Shortext-Setup-1.6.16.exe" download>
+            Download now
+            <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 2v10m0 0 4-4m-4 4L6 8M3 15v2h14v-2" /></svg>
+          </a>
+          <small>100% free · Windows 10 &amp; 11 · No account required</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#top">
+        <span class="brand-mark"><img src="/assets/shortext-logo.png" alt="" /></span>
+        <span class="brand-copy"><strong>SHORTEXT</strong><small>Your words, ready anywhere</small></span>
+      </a>
+      <p>Free desktop text expansion for faster, more consistent work.</p>
+      <div><span>Developed by ROXI</span><span>Version 1.6.16</span><span>© <b data-year></b> Shortext</span></div>
+    </footer>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
