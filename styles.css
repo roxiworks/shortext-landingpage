@@ -1693,6 +1693,135 @@ h2 em {
   font-size: 9px;
 }
 
+.footer-link {
+  color: var(--mint);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(15, 242, 156, 0.35);
+  text-underline-offset: 3px;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.footer-link:hover {
+  color: var(--mint-bright);
+  text-decoration-color: currentColor;
+}
+
+.privacy-page {
+  min-height: 100vh;
+}
+
+.privacy-main {
+  width: min(100%, 960px);
+  min-height: calc(100vh - 150px);
+  padding: 140px var(--pad) 90px;
+  margin: 0 auto;
+}
+
+.privacy-intro {
+  padding-bottom: 38px;
+  border-bottom: 1px solid var(--line);
+}
+
+.privacy-eyebrow {
+  margin: 0 0 12px;
+  color: var(--mint);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.privacy-intro h1 {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.privacy-summary {
+  max-width: 690px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: clamp(16px, 2vw, 19px);
+}
+
+.privacy-updated {
+  display: inline-flex;
+  margin-top: 22px;
+  padding: 7px 11px;
+  color: var(--mint);
+  background: rgba(15, 242, 156, 0.08);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.privacy-content {
+  display: grid;
+  gap: 0;
+}
+
+.privacy-section {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.35fr) minmax(0, 1fr);
+  gap: 28px;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.privacy-section h2 {
+  margin: 0;
+  color: var(--cream);
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+.privacy-copy {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.privacy-copy p {
+  margin: 0 0 14px;
+}
+
+.privacy-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-copy ul {
+  display: grid;
+  gap: 9px;
+  padding-left: 19px;
+  margin: 0;
+}
+
+.privacy-copy li::marker {
+  color: var(--mint);
+}
+
+.privacy-copy strong {
+  color: var(--cream);
+}
+
+.privacy-copy a {
+  color: var(--mint);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.privacy-copy code {
+  padding: 2px 6px;
+  color: var(--cream);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  font-family: Consolas, monospace;
+  font-size: 0.9em;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -2030,6 +2159,17 @@ h2 em {
   .site-footer > div {
     grid-column: auto;
     justify-content: flex-start;
+  }
+
+  .privacy-main {
+    padding-top: 112px;
+    padding-bottom: 64px;
+  }
+
+  .privacy-section {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    padding: 28px 0;
   }
 }
 

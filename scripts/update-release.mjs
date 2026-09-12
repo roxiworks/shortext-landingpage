@@ -31,13 +31,15 @@ if (sourceInstaller !== destinationInstaller) {
   }
 }
 
-const indexPath = join(projectRoot, "index.html");
-const currentHtml = await readFile(indexPath, "utf8");
-const updatedHtml = currentHtml
-  .replace(/\/downloads\/Shortext-Setup-[^"']+\.exe/g, `/downloads/${installerName}`)
-  .replace(/Version \d+\.\d+\.\d+(?:[-+][A-Za-z0-9.-]+)?/g, `Version ${version}`);
+for (const pageName of ["index.html", "privacy.html"]) {
+  const pagePath = join(projectRoot, pageName);
+  const currentHtml = await readFile(pagePath, "utf8");
+  const updatedHtml = currentHtml
+    .replace(/\/downloads\/Shortext-Setup-[^"']+\.exe/g, `/downloads/${installerName}`)
+    .replace(/Version \d+\.\d+\.\d+(?:[-+][A-Za-z0-9.-]+)?/g, `Version ${version}`);
 
-await writeFile(indexPath, updatedHtml, "utf8");
+  await writeFile(pagePath, updatedHtml, "utf8");
+}
 
 const readmePath = join(projectRoot, "README.md");
 const currentReadme = await readFile(readmePath, "utf8");

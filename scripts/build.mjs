@@ -8,7 +8,7 @@ const outputDirectory = join(projectRoot, "dist");
 await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
 
-for (const file of ["index.html", "styles.css", "script.js"]) {
+for (const file of ["index.html", "privacy.html", "styles.css", "script.js"]) {
   await cp(join(projectRoot, file), join(outputDirectory, file));
 }
 
