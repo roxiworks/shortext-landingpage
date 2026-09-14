@@ -31,7 +31,7 @@ The deployable website is generated in `dist/`.
 
 The current installer is:
 
-`public/downloads/Shortext-Setup-1.6.16.exe`
+`public/downloads/Shortext-Setup-1.6.17.exe`
 
 After building a new Shortext installer, run:
 
