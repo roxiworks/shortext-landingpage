@@ -2,6 +2,8 @@
 
 A responsive, dependency-free landing page for Shortext, ready to deploy to Vercel.
 
+The primary download is also available from the [Microsoft Store](https://apps.microsoft.com/detail/9NC46N9J1VRK).
+
 ## Local development
 
 ```powershell

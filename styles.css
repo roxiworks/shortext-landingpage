@@ -303,6 +303,23 @@ svg {
   box-shadow: 0 14px 38px rgba(15, 242, 156, 0.17);
 }
 
+.button-store {
+  color: var(--mint);
+  background: rgba(15, 242, 156, 0.05);
+  border-color: rgba(15, 242, 156, 0.42);
+}
+
+.button-store:hover {
+  color: var(--ink);
+  background: var(--mint);
+  box-shadow: 0 14px 38px rgba(15, 242, 156, 0.14);
+}
+
+.button-store .microsoft-mark {
+  fill: currentColor;
+  stroke: none;
+}
+
 .button-dark {
   color: var(--cream);
   background: var(--ink);
@@ -477,7 +494,8 @@ h2 em {
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 26px;
 }
 
